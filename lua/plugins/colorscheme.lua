@@ -7,6 +7,19 @@ return {
   {
     "navarasu/onedark.nvim",
     lazy = false,
+    opts = {
+      code_style = {
+        comments = "italic",
+        keywords = "none",
+        functions = "none",
+        strings = "none",
+        variables = "none",
+      },
+      style = "dark", -- Choose from "dark", "darker", "cool", "deep", "warm", "warmer", (do not choose) "light"
+      lualine = {
+        transparent = true,
+      },
+    },
   },
   {
     "decaycs/decay.nvim",
@@ -15,7 +28,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "decay-default",
+      colorscheme = "onedark",
       indentguides = false,
     },
   },
